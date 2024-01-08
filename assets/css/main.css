@@ -2109,6 +2109,11 @@ a.video-play-btn {
   margin-bottom: 0;
 }
 
+.feature-img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
 /* -----------------------------------------------------------------------------
 
 # Shop Banner Styles
@@ -2154,7 +2159,7 @@ a.video-play-btn {
 ----------------------------------------------------------------------------- */
 .feature-bg {
   position: relative;
-  margin: 150px 0;
+  margin: 150px;
 }
 
 .feature-bg:after {
