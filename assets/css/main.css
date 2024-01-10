@@ -163,6 +163,8 @@ p:last-child {
 # All Common Styles
 
 ----------------------------------------------------------------------------- */
+
+
 .loader {
   bottom: 0;
   height: 100%;
@@ -549,6 +551,7 @@ nav.main-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
 
 nav.main-menu ul li {
@@ -556,11 +559,12 @@ nav.main-menu ul li {
 }
 
 nav.main-menu ul li a {
-  color: #fff;
+  color: #000000;
   font-weight: 700;
   display: block;
   padding: 15px;
 }
+
 
 nav.main-menu ul > li {
   position: relative;
@@ -611,7 +615,7 @@ nav.main-menu > ul li:last-child {
 
 .site-logo {
   float: left;
-  max-width: 150px;
+  max-width: 300px;
 }
 
 ul.sub-menu li:last-child {
@@ -630,7 +634,9 @@ ul.sub-menu li:last-child {
 }
 
 .main-menu-wrap {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mean-container a.meanmenu-reveal {
@@ -722,14 +728,24 @@ nav.main-menu li a {
 }
 
 .sticky-wrapper.is-sticky .top-header-area {
-  background-color: #051922;
+  background-color: #ffffff;
   padding: 15px 0;
+}
+
+.sticky-wrapper.is-sticky .top-header-area .main-menu ul li a {
+  color: #000000;
+}
+.sticky-wrapper.is-sticky .top-header-area .main-menu ul li a:hover {
+  color: #f6007f;
 }
 
 .top-header-area {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+.top-header-area .main-menu ul li a {
+  color: #fff;
 }
 
 ul.navbar-nav {
@@ -857,14 +873,14 @@ a.mobile-show {
 }
 
 .logo-carousel-section {
-  background-color: #f5f5f5;
+  background-color: #000000;
   padding: 50px 0;
 }
 
 .footer-area {
-  background-color: #051922;
-  color: #fff;
-  padding: 150px 0;
+  background-color: #ffffff;
+  color: #000000;
+  padding-bottom: 100px;
 }
 
 h2.widget-title {
@@ -872,7 +888,7 @@ h2.widget-title {
   font-weight: 500;
   position: relative;
   padding-bottom: 20px;
-  color: #fff;
+  color: #f6007f;
 }
 
 h2.widget-title:after {
@@ -886,7 +902,7 @@ h2.widget-title:after {
 }
 
 .footer-box p {
-  color: #fff;
+  color: #000000;
   opacity: 0.7;
   line-height: 1.8;
 }
@@ -914,7 +930,7 @@ h2.widget-title:after {
   padding: 15px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  color: #fff;
+  color: #000000;
 }
 
 .footer-box.subscribe form button {
@@ -966,14 +982,14 @@ h2.widget-title:after {
 
 .social-icons ul li a {
   font-size: 16px;
-  color: #fff;
+  color: #f6007f;
   opacity: 0.7;
   padding: 16px 10px;
   display: block;
 }
 
 .footer-box ul li a {
-  color: #fff;
+  color: #000000;
 }
 
 .footer-box.pages ul li {
@@ -2163,7 +2179,7 @@ a.video-play-btn {
 }
 
 .feature-bg:after {
-  background-image: url(../img/feature-bg.jpg);
+  background-image: url(../img/hero-bg.jpg);
   position: absolute;
   right: 0;
   top: 0;

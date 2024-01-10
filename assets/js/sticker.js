@@ -25,6 +25,8 @@
     var slice = Array.prototype.slice; // save ref to original slice()
     var splice = Array.prototype.splice; // save ref to original slice()
 
+    var logo =document.getElementById("logo");
+
   var defaults = {
       topSpacing: 0,
       bottomSpacing: 0,
@@ -66,6 +68,7 @@
             s.stickyElement.parent().removeClass(s.className);
             s.stickyElement.trigger('sticky-end', [s]);
             s.currentTop = null;
+            logo.src = "assets/img/logo.png";
           }
         }
         else {
@@ -94,6 +97,8 @@
               .css('z-index', s.zIndex);
 
             s.stickyElement.parent().addClass(s.className);
+            //change logo src if sticky and put it back if not
+              logo.src = "assets/img/logo2.png";
 
             if (s.currentTop === null) {
               s.stickyElement.trigger('sticky-start', [s]);
